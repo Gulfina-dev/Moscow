@@ -1,0 +1,1110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* добавил для корректных размеров */
+}
+
+/* Общие стили */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a1a1f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== ХЕДЕР ========== */
+.nav_fon {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 620px;
+    background-image: url('../mediya/fon.jpg');
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden;  ← УДАЛИТЕ ЭТУ СТРОКУ */
+    margin: 0;
+    padding: 0;
+}
+
+/* УДАЛИТЬ ВЕСЬ ЭТОТ БЛОК - он создаёт затемнение */
+/* .nav_fon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+} */
+
+.nav_header_main {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+.nav_main {
+    display: flex;
+    align-items: flex-end;
+    gap: 38px; /* между 37-40px */
+    margin-left: 350px;
+}
+
+.nav_a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto", system-ui, sans-serif;
+    font-weight: 400; /* semi bold */
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.logo {
+    width: 111.32px;
+    height: 79.52px;
+    display: block;
+}
+
+/* ========== HERO БЛОК ========== */
+.hero_section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -4px; /* добавить эту строку */
+    position: relative; /* Добавить эту строку для работы absolute у иконки */
+}
+
+.hero_container {
+    max-width: 600px;
+    text-align: center;
+    margin-top: -200px;
+}
+
+.hero_subtitle {
+    font-size: 120px;
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-weight: 10;
+    margin-bottom: 41px;
+    color: #ffffff;
+    white-space: nowrap;
+    display: block;      /* ДОБАВИЛ - для центрирования */
+    width: 100%;         /* ДОБАВИЛ - для центрирования */
+}
+
+.hero_container {
+    text-align: center;
+    width: 100%;
+}
+
+.hero_subtitle {
+    font-size: 90px;
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-weight: 400;
+    margin-bottom: 41px;
+    color: #ffffff;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+}
+
+.hero_title {
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    color: #ffffff;
+    margin-top: -30px; /* поднимает "Сердце России" */
+}
+
+.hero_btn {
+    background: #E22121;
+    border: none;
+    width: 255px;
+    height: 54px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero_btn:hover {
+    background: #E22121;
+    transform: scale(1.02);
+}
+
+.hero_mouse_icon {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.mouse_svg {
+    width: 20px;
+    height: 34px;
+    display: block;
+}
+
+/* ===== НОВЫЙ БЛОК МОСКВА (Frame 66) ===== */
+.moscow_new_section {
+    background-color: #714646;
+    padding: 60px 80px 0px 80px;
+    position: relative;
+    border-bottom: 40px solid #968072;
+}
+
+.moscow_new_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ЛЕВАЯ ЧАСТЬ */
+.moscow_new_left {
+    flex: 1.2;
+    max-width: 55%;
+}
+
+.moscow_title_group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.moscow_main_title {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+}
+
+.moscow_bg_title {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 95px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.18);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    line-height: 1;
+    white-space: nowrap;
+    transform: translateY(8px);
+}
+
+.moscow_text_group {
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.moscow_paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.moscow_paragraph strong {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Цифра 878 */
+.moscow_stat_block {
+    margin-top: 20px;
+}
+
+.moscow_big_number {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 100px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: 90px;
+}
+
+.moscow_stat_label {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 15px;
+    color: #ffffff;
+    max-width: 280px;
+    white-space: nowrap; /* запрещает перенос на новую строку */
+}
+
+/* ПРАВАЯ ЧАСТЬ (КАРТИНКИ) */
+.moscow_new_right {
+    flex: 0.8;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moscow_images_stack {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
+
+.moscow_img_1 {
+    position: absolute;
+    z-index: 3;
+    max-width: 100%;
+    height: auto;
+    top: 25px;
+    right: 250px;
+}
+
+.moscow_img_2 {
+    position: absolute;
+    right: -40px;
+    z-index: 2;
+    max-width: 85%;
+    height: auto;
+    top: 115px;
+}
+
+.moscow_img_sculpture {
+    position: absolute;
+    right: 20px;
+    max-width: 70%;
+    height: auto;
+    top: -90px;
+    right: 500;
+    z-index: 1;
+}
+
+/* ОБЩИЙ КОНТЕЙНЕР ДЛЯ SVG И ЦАРЬ-ПУШКИ */
+.moscow_absolute_group {
+    position: absolute;
+    right: 295px;
+    bottom: 800px;
+}
+
+.moscow_divider_wrap {
+    max-width: 491px;
+    width: 491px;
+    margin-bottom: 30px;
+}
+
+.moscow_divider_svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.moscow_cannon_block {
+    max-width: 380px;
+}
+
+.moscow_cannon_img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.moscow_cannon_text {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.4;
+    text-align: left;
+    max-width: 380px;
+}
+
+/* Нижняя часть: храм */
+.moscow_lower_part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 0px; /* убрал отступ сверху */
+    margin-bottom: 0px; /* убрал отступ снизу */
+}
+
+.moscow_stbasil_block {
+    align-self: flex-end;
+    max-width: none;
+    margin-bottom: 0px; /* убрал отступ снизу */
+}
+
+.moscow_stbasil_img {
+    width: 800px; /* нужный размер */
+    height: auto;
+    display: block;
+    margin-top: -320px; /* поднимает храм вверх, отрицательное значение = выше */
+    margin-left: -30px; /* отрицательное значение = влево */
+}
+
+/* ОБЩИЙ КОНТЕЙНЕР ДЛЯ SVG И ЦАРЬ-ПУШКИ */
+.moscow_absolute_group {
+    position: absolute;
+    right: 295px;
+    top: 580px;
+}
+
+.moscow_divider_wrap {
+    max-width: 491px;
+    width: 491px;
+    margin-bottom: -90px; /* расстояние между SVG и пушкой (уменьшил) */
+}
+
+.moscow_cannon_block {
+    max-width: 380px;
+    position: relative;
+    right: -270px; /* положительное значение = вправо, отрицательное = влево */
+}
+
+.moscow_cannon_img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: -140px; /* расстояние между пушкой и текстом (уменьшил) */
+}
+
+.moscow_cannon_text {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.4;
+    text-align: left;
+    max-width: 380px;
+    margin-left: 50px; /* сдвиг текста вправо */
+}
+
+/* Адаптив */
+@media (max-width: 1100px) {
+    .moscow_new_container {
+        flex-direction: column;
+    }
+    .moscow_new_left {
+        max-width: 100%;
+    }
+    .moscow_new_right {
+        justify-content: center;
+        min-height: 300px;
+    }
+    .moscow_img_2 {
+        right: 0;
+    }
+    .moscow_lower_part {
+        flex-direction: column;
+    }
+}
+
+/* ===== БЛОК ЭКСКУРСИИ ===== */
+.excursions_new_section {
+    background-color: #5C3530;
+    padding: 60px 80px 80px 80px;
+    position: relative;
+}
+
+.excursions_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Заголовки по центру */
+.excursions_title_group {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.excursions_main_title {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+    display: inline-block;
+    top: 20px; /* добавляем - опускает только основной заголовок */
+}
+
+.excursions_bg_title {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 95px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    line-height: 1;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Подзаголовок */
+.excursions_subtitle {
+    font-family: 'Roboto', sans-serif; /* убираем Lowan Old Style */
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px; /* добавляем отступ сверху, чтобы опустить вниз */
+}
+
+/* Центральный ряд с автобусом и боковыми SVG */
+.excursions_center_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-top: -100px; /* отрицательное значение = поднимает вверх */
+}
+
+.excursions_left_svg {
+    width: 269.26px;
+    height: 479.8px;
+    display: block;
+    transform: translate(7px, -24px); /* (влево/вправо, вверх/вниз) */
+}
+
+.excursions_bus_wrap {
+    width: 509px;
+    height: 316px;
+}
+
+.excursions_bus_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.excursions_right_svg {
+    width: 248.5px;
+    height: 471.9px;
+    display: block;
+    transform: translate(-30px, -50px); /* (влево/вправо, вверх/вниз) */
+}
+
+/* Текст под автобусом */
+.excursions_description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -105px; /* поднимает вверх, отрицательное значение = выше */
+    padding: 0; /* убираем лишние отступы */
+}
+
+/* Прямоугольник 1193x124, торчит вправо */
+.excursions_container {
+    max-width: none; /* убираем ограничение */
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: clip; /* скрываем выходящее за пределы */
+}
+
+.excursions_info_rectangle {
+    width: 921.7px;
+    height: 124px;
+    background-color: #481F1F;
+    border-radius: 124px; /* все углы закруглены на максимум */
+    margin: 0 auto; /* выравнивание по центру */
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* текст по центру по горизонтали */
+    text-align: center;
+}
+
+.excursions_info_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.8;
+    text-align: center; /* текст по центру */
+}
+
+.excursions_info_text strong {
+    font-weight: 700;
+}
+
+/* Нижняя строка: план + картинка */
+/* Нижняя строка */
+.excursions_lower_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.excursions_plan_block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* текст внутри слева */
+    transform: translateX(220px); /* сдвигаем вправо ближе к центру */
+}
+
+.excursions_plan_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.excursions_plan_items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 25px;
+}
+
+.excursions_plan_item {
+    width: 416px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.excursions_ending {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.excursions_ending strong {
+    font-weight: 700;
+}
+
+/* Правое изображение */
+.excursions_right_image {
+    width: 426px;
+    height: 267px;
+    flex-shrink: 0;
+    transform: translateX(-220px); /* сдвигаем влево ближе к центру */
+}
+
+.excursions_bus_small_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Адаптив */
+@media (max-width: 1400px) {
+    .excursions_info_rectangle {
+        width: calc(100% + 100px);
+        margin-left: -80px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .excursions_center_row {
+        flex-direction: column;
+    }
+    .excursions_lower_row {
+        flex-direction: column;
+    }
+    .excursions_plan_item {
+        width: 100%;
+    }
+    .excursions_info_rectangle {
+        border-radius: 30px;
+    }
+}
+
+/* ===== БЛОК ОТЗЫВЫ ===== */
+.reviews_new_section {
+    background-color: #714646;
+    padding: 80px 80px 80px 80px;
+    position: relative;
+    overflow: visible;
+}
+
+.reviews_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+}
+
+/* Заголовки по центру */
+.reviews_title_group {
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+    display: inline-block;
+    width: 100%;
+    overflow: visible;
+}
+
+.reviews_main_title {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+    display: inline-block;
+    top: 19px;
+}
+
+.reviews_bg_title {
+    font-family: 'Lowan Old Style', 'Georgia', 'Times New Roman', serif;
+    font-size: 95px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    line-height: 1;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Горизонтальный скроллер */
+.reviews_scroll_wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+    cursor: grab;
+    user-select: none;
+    scroll-behavior: smooth;
+    padding: 30px 0 40px 0;
+}
+
+.reviews_scroll_wrapper:active {
+    cursor: grabbing;
+}
+
+.reviews_scroll_container {
+    display: flex;
+    gap: 30px;
+    width: fit-content;
+    padding: 0 0 20px 0;
+    margin-top: 40px; /* добавляем - опускает блоки с отзывами вниз */
+}
+
+/* Карточка отзыва */
+.reviews_card {
+    width: 278px;
+    min-height: 286px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px 20px 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+/* Аватарка */
+.reviews_avatar_wrap {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Внешний круг (контур) - цвет FFE69B для всех */
+.reviews_avatar_ring {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #FFE69B;
+    background: transparent;
+}
+
+/* Внутренний цветной круг */
+.reviews_avatar_circle {
+    width: 80.45px;
+    height: 80.45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+/* Цвета внутреннего круга для разных отзывов */
+.circle_pink { background-color: #EC3F7E; }
+.circle_orange { background-color: #D27A3C; }
+.circle_green { background-color: #459769; }
+.circle_purple { background-color: #C359BF; }
+.circle_blue { background-color: #7ACFE3; }
+
+.reviews_avatar_icon {
+    width: 45px;
+    height: 45px;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+
+/* Звезды */
+.reviews_stars {
+    margin-top: 65px;
+    margin-bottom: 12px;
+}
+
+.reviews_stars_img {
+    width: 108.38px;
+    height: 19.71px;
+    display: block;
+}
+
+/* Текст отзыва */
+.reviews_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    margin-top: 0;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Автор и дата */
+/* Автор и дата */
+.reviews_author {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.reviews_name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.reviews_date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px; /* было 11px - увеличил */
+    font-weight: 400; /* добавил - не такой тусклый */
+    color: #414141; /* было #999999 - сделал темнее и ярче */
+    display: block;
+    margin-top: 0;
+}
+
+/* Скрываем скроллбар для Chrome/Safari */
+.reviews_scroll_wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.reviews_scroll_wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.reviews_scroll_wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.reviews_scroll_wrapper::-webkit-scrollbar {
+    display: none; /* убираем полосу для Chrome/Safari */
+}
+
+.reviews_scroll_wrapper {
+    -ms-overflow-style: none; /* убираем для IE/Edge */
+    scrollbar-width: none; /* убираем для Firefox */
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .reviews_new_section {
+        padding: 60px 20px 80px 20px;
+    }
+    .reviews_card {
+        width: 260px;
+        min-height: 280px;
+    }
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .reviews_new_section {
+        padding: 60px 20px 80px 20px;
+    }
+    .reviews_card {
+        width: 260px;
+        height: 280px;
+    }
+}
+
+/* ===== ПОДВАЛ САЙТА ===== */
+.footer_new_section {
+    background-color: #251717;
+    padding: 0;
+    position: relative;
+}
+
+.footer_container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Карта - на всю ширину, без закруглений */
+.footer_map_wrap {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.footer_map_img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0; /* убираем закругления */
+}
+
+/* Контактная информация */
+.footer_contact_wrap {
+    margin-bottom: 40px;
+}
+
+.footer_contact_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer_contact_info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.4;
+    display: inline-block;
+    text-align: center;
+    margin-top: -10px; /* добавляем - поднимает только информацию */
+}
+
+.footer_contact_info p {
+    margin-bottom: 10px;
+}
+
+.footer_contact_info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Иконки соцсетей */
+.footer_social_wrap {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer_social_img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .footer_contact_title {
+        font-size: 18px;
+    }
+    
+    .footer_contact_info {
+        font-size: 16px;
+    }
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_content {
+    width: 472px;
+    max-width: 90%;
+    background-color: #ffffff;
+    border-radius: 17px;
+    padding: 30px 25px 35px 25px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    min-height: 460px; /* было без ограничения, добавил высоту */
+    box-sizing: border-box;
+}
+
+.modal_close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #999;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal_close:hover {
+    color: #333;
+}
+
+.modal_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e2a2e;
+    margin-bottom: 12px;
+    margin-top: 25px;
+}
+
+.modal_subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.modal_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.modal_input {
+    width: 369px;
+    max-width: 100%;
+    height: 53px;
+    border: 2px solid #A5A5A5;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1a1a1a;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.modal_input::placeholder {
+    color: #A5A5A5;
+    font-size: 20px;
+}
+
+.modal_btn {
+    width: 369px;
+    max-width: 100%;
+    height: 53px;
+    background-color: #F54646;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.modal_agreement span {
+    color: #007CFF;
+}
+
+.modal_btn:hover {
+    background-color: #d93a3a;
+    transform: scale(1.02);
+}
+
+.modal_agreement {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.4;
+    margin-top: 10px;
+}
